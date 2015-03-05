@@ -1,0 +1,10 @@
+import readline
+import rlcompleter
+
+# enable completion (mac os x specific)
+# readline.parse_and_bind("bind ^I rl_complete")
+readline.parse_and_bind("tab: complete")
+
+# This doesn't work, you will need to do bind -v in .editrc instead :(
+readline.parse_and_bind("set editing-mode vi")
+
