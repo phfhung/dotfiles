@@ -7,7 +7,8 @@ configure your `bash` and `emacs` development environment as follows:
 
 ```sh
 cd $HOME
-git clone https://github.com/startup-class/dotfiles.git
+git clone https://github.com/phfhung/dotfiles.git
+ln -sb dotfiles/.inputrc .
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
