@@ -159,6 +159,7 @@ fi
 # Append to history
 # See: http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 shopt -s histappend
+shopt -s cdspell  # allow dir name typos
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
