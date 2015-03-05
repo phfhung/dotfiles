@@ -163,7 +163,8 @@ shopt -s cdspell  # allow dir name typos
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\] "
+# and:  https://wiki.archlinux.org/index.php/Color_Bash_Prompt
+PS1="\[\033[1;32m\][\u@\h:\w]$\[\033[0m\] "
 
 ## -----------------------
 ## -- 2) Set up aliases --
