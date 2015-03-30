@@ -165,7 +165,11 @@ shopt -s cdspell  # allow dir name typos
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
 # and:  https://wiki.archlinux.org/index.php/Color_Bash_Prompt
-PS1="\[\033[1;32m\][\u@\h:\w]$\[\033[0m\] "
+if [[ `hostname  -s` = ip-172-31-26-107 ]]; then
+  PS1="\[\033[1;32m\][\u@\h:\w]$\[\033[0m\] "
+elif [[ `hostname  -s` = ip-172-31-17-5 ]]; then
+  PS1="\[\033[1;34m\][\u@\h:\w]$\[\033[0m\] "
+fi
 
 ## -----------------------
 ## -- 2) Set up aliases --
