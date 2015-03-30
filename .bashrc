@@ -68,6 +68,7 @@
 #  Conversely, if the default group name is *different* from the username
 #  AND the user id is greater than 99, we're on the server, and set umask
 #  022 for easy collaborative editing.
+
 if [ "`id -gn`" == "`id -un`" -a `id -u` -gt 99 ]; then
 	umask 002
 else
