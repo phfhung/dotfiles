@@ -65,3 +65,5 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH # Heroku: https://toolbelt.heroku.com/standalone
 export PYTHONSTARTUP=${HOME}/.python
 export PATH=/home/ubuntu/mpich-install/bin:~/apache-maven-3.3.1/bin:$PATH
+
+export MPICH_PORT_RANGE=39632:40000
