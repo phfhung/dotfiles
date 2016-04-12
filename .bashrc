@@ -230,6 +230,13 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
+# bash completion for stuff like apt-get
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  fi
+fi
+
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
