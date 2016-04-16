@@ -189,10 +189,6 @@ alias la="ls -A"
 alias l="ls -CF"
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
-alias m='less'
-alias ..='cd ..'
-alias ...='cd ..;cd ..'
-alias md='mkdir'
 alias cl='clear'
 alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
@@ -228,6 +224,13 @@ if [ -s ~/.nvm/nvm.sh ]; then
     NVM_DIR=~/.nvm
     source ~/.nvm/nvm.sh
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
+fi
+
+# bash completion for stuff like apt-get
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  fi
 fi
 
 ## ------------------------------
