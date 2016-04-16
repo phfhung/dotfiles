@@ -236,3 +236,15 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Go 1.6
+if [ -s ~/go/bin/go ]; then
+  echo "(Setting Go Env)"
+  export PATH=~/go/bin:$PATH
+  export GOROOT=~/go
+fi

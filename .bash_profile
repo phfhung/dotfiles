@@ -67,3 +67,6 @@ export PYTHONSTARTUP=${HOME}/.python
 export PATH=/home/ubuntu/mpich-install/bin:~/apache-maven-3.3.1/bin:$PATH
 
 export MPICH_PORT_RANGE=39632:40000
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
