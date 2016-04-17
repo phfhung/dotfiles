@@ -239,7 +239,6 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
-<<<<<<< HEAD
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
