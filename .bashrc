@@ -242,7 +242,6 @@ source ~/.bashrc_custom
 
 ### Go 1.6
 if [ -s ~/go/bin/go ]; then
-  echo "(Setting Go Env)"
   export PATH=~/go/bin:$PATH
   export GOROOT=~/go
 fi
