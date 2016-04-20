@@ -239,6 +239,14 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+###
+alias clang++=clang++-3.5
 
 ### Go 1.6
 if [ -s ~/go/bin/go ]; then
