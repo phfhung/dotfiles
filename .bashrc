@@ -246,7 +246,7 @@ export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ###
-alias clang=clang++-3.5
+alias clang++=clang++-3.5
 
 ### Go 1.6
 if [ -s ~/go/bin/go ]; then
