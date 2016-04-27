@@ -253,3 +253,5 @@ if [ -s ~/go/bin/go ]; then
   export PATH=~/go/bin:$PATH
   export GOROOT=~/go
 fi
+
+export EC2_URL=https://ec2.eu-west-1.amazonaws.com
