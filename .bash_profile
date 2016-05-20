@@ -70,8 +70,3 @@ export MPICH_PORT_RANGE=39632:40000
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-
-### intel python
-if [ -s /opt/intel/intelpython27/bin/pythonvars.sh ]; then
-  source /opt/intel/intelpython27/bin/pythonvars.sh
-fi

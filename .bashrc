@@ -259,3 +259,8 @@ if [ -s ~/ec2keys ]; then
   export EC2_URL=https://ec2.us-west-2.amazonaws.com
   source ~/ec2keys
 fi
+
+### intel python
+if [ -s /opt/intel/intelpython27/bin/pythonvars.sh ]; then
+  source /opt/intel/intelpython27/bin/pythonvars.sh
+fi
