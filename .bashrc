@@ -254,4 +254,8 @@ if [ -s ~/go/bin/go ]; then
   export GOROOT=~/go
 fi
 
-export EC2_URL=https://ec2.us-west-2.amazonaws.com
+### ec2
+if [ -s ~/ec2keys ]; then
+  export EC2_URL=https://ec2.us-west-2.amazonaws.com
+  source ~/ec2keys
+fi
